@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import  Login from './components/Login';
+import Dashboard from './components/Dashboard';
+import Conditional_comp from './components/Conditional_comp';
+import { Routes, Route, Link, BrowserRouter } from 'react-router-dom';
+import { Box, AppBar, Typography, Toolbar, Button, Container } from '@mui/material';
+import { Counter } from './features/counter/Counter';
+import Sony_sample_ui from './components/Sony_table/Sony_sample_ui';
+import Fruits from './components/Sony_table/Reused_row_parent';
+
 
 function App() {
+
   return (
+    <Container maxWidth="lg" className="_container">
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard  />} />
+        <Route path="/conditional" element={<Conditional_comp isGoal={false} isLight={true}/>} />
+        <Route path="/redux" element={<Counter  />} />
+        <Route path="/sony" element={<Sony_sample_ui  />} />
+        <Route path="/fruits" element={<Fruits  />} />
+      </Routes>
+    </BrowserRouter>
+
+
     </div>
+    </Container>
   );
 }
 
 export default App;
+
+
+//redirect from submit to the count dashboard 

@@ -36,3 +36,55 @@
     transform: rotate(360deg);
   }
 }
+
+.Explicit_padding{
+ 
+  margin-right: 50px !important;
+}
+
+.Right_alignment{
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+
+.dropdowns{
+  width: 25%;
+  align-items: flex-end;
+}
+
+.header{
+  display: flex;
+  width: 100%;
+
+}
+
+.header_textboxes{
+  display: flex;
+  width: 50%;
+  align-self: flex-end;
+  margin-left: 10px;
+  margin-right: 10px !important;
+}
+
+.header_width{
+  width: 115%;
+}
+
+.textbox_width{
+  width:30%;
+  display: flex;
+  /* align-items: flex-end ; */
+  margin-left: 25px;
+  margin-right: 100px;
+
+}
+
+
+.textbox_table{
+  border: none;
+border-color: transparent;
+width: 35px;
+color: black;
+
+}
