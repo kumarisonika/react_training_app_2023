@@ -5,12 +5,13 @@ import Dashboard from './components/Dashboard';
 import Conditional_comp from './components/Conditional_comp';
 import { Routes, Route, Link, BrowserRouter } from 'react-router-dom';
 import { Box, AppBar, Typography, Toolbar, Button, Container } from '@mui/material';
-import { Counter } from './features/counter/Counter';
 import Sony_sample_ui from './components/Sony_table/Sony_sample_ui';
 import Fruits from './components/Sony_table/Reused_row_parent';
 import VillageList from './components/village componenet/VillageList';
 import FlaskAPIDetails from './components/Sony_table/flaskAPI/DisplayingAPI';
 import React_query_example from './components/React_query_example';
+import Redux_Navbar from './redux_component/Redux_Navbar';
+
 
 function App() {
 
@@ -22,12 +23,13 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard  />} />
         <Route path="/conditional" element={<Conditional_comp isGoal={false} isLight={true}/>} />
-        <Route path="/redux" element={<Counter  />} />
         <Route path="/sony" element={<Sony_sample_ui  />} />
         <Route path="/fruits" element={<Fruits  />} />
         <Route path='/villagelist' element={<VillageList/>} />
         <Route path="/flask" element={<FlaskAPIDetails  />} />
         <Route path="/query" element={<React_query_example />} />
+        <Route path="/redux" element={<Redux_Navbar />} />
+        
       </Routes>
     </BrowserRouter>
 
