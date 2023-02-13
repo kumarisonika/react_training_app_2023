@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Redux_UserDetails from "./Redux_UserDetails";
 
-const Redux_Navbar = () => {
+export default function Redux_Navbar(){
   return (
     <Wrapper>
       <h1>Admin Table</h1>
@@ -92,4 +92,3 @@ const Wrapper = styled.section`
   }
 `;
 
-export default Redux_Navbar;
