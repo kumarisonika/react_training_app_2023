@@ -28,3 +28,19 @@ export interface FruitData {
     season: string,
     history: Array<History>
 }
+
+export interface IVillageData {
+    id:number
+    village_name: any | null,
+    description?: string,
+    nation_id?: number
+  }
+
+export interface FlaskApiData{
+    domain:string,
+    time:number,
+    user:string,
+    user1:string,
+    username:string|null
+}
+  
